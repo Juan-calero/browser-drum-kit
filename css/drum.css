@@ -1,0 +1,66 @@
+html {
+  overflow: hidden;
+  font-family: 'Work Sans', sans-serif;
+}
+
+body {
+  color: white;
+  height: 100vh;
+  background: url("https://images.pexels.com/photos/1763068/pexels-photo-1763068.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 25% center;
+  display: -ms-grid;
+  display: grid;
+  place-items: center;
+}
+
+.drum {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.drum__key {
+  overflow: hidden;
+  display: inherit;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: rgba(0, 0, 0, 0.5);
+  width: 4em;
+  height: 4em;
+  -webkit-transition: all 0.07s;
+  transition: all 0.07s;
+  margin: 0.5em;
+  padding: 1rem;
+  border-radius: 5px;
+  border: 1px solid black;
+}
+
+.drum__letter {
+  font-weight: 800;
+  margin: 0ch;
+  font-size: 3em;
+}
+
+.drum__subtitle {
+  margin: 0ch;
+  color: #ffb060;
+  text-transform: capitalize;
+}
+
+.playing {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  border-color: transparent;
+  margin: 0.5em;
+  padding: 1rem;
+  -webkit-box-shadow: 0px 0px 10px 8px #f97d00;
+          box-shadow: 0px 0px 10px 8px #f97d00;
+}
+/*# sourceMappingURL=drum.css.map */

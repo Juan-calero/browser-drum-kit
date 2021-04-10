@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@300;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/drum.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Drum Kit</title>
+</head>
+<body>
+    <div class="drum">
+        <div class="drum__key" key-data="KeyA">
+            <kbd class="drum__letter" >A</kbd>
+            <p class="drum__subtitle">Clap</p></div>
+        <div class="drum__key" key-data="KeyS">
+            <kbd class="drum__letter" >S</kbd>
+            <p class="drum__subtitle">hihat</p></div>
+        <div class="drum__key" key-data="KeyD">
+            <kbd class="drum__letter" >D</kbd>
+            <p class="drum__subtitle">kick</p></div>
+        <div class="drum__key" key-data="KeyF">
+            <kbd class="drum__letter" >F</kbd>
+            <p class="drum__subtitle">openhat</p></div>
+        <div class="drum__key" key-data="KeyG">
+            <kbd class="drum__letter" >G</kbd>
+            <p class="drum__subtitle">boom</p></div>
+        <div class="drum__key" key-data="KeyH">
+            <kbd class="drum__letter" >H</kbd>
+            <p class="drum__subtitle">ride</p></div>
+        <div class="drum__key" key-data="KeyJ">
+            <kbd class="drum__letter" >J</kbd>
+            <p class="drum__subtitle">snare</p></div>
+        <div class="drum__key" key-data="KeyK">
+            <kbd class="drum__letter" >K</kbd>
+            <p class="drum__subtitle">tom</p></div>
+        <div class="drum__key" key-data="KeyL">
+            <kbd class="drum__letter" >L</kbd>
+            <p class="drum__subtitle">Drop</p>
+        </div>
+    </div>
+    <audio src="../sound/clap.wav" key-data="KeyA"></audio>
+    <audio src="../sound/hihat.wav" key-data="KeyS"></audio>
+    <audio src="../sound/kick.wav" key-data="KeyD"></audio>
+    <audio src="../sound/cowbell.wav" key-data="KeyF"></audio>
+    <audio src="../sound/boom.wav" key-data="KeyG"></audio>
+    <audio src="../sound/ride.wav" key-data="KeyH"></audio>
+    <audio src="../sound/snare.wav" key-data="KeyJ"></audio>
+    <audio src="../sound/tom.wav" key-data="KeyK"></audio>
+    <audio src="../sound/waterdrop.wav" key-data="KeyL"></audio>
+    <script src="../js/drum.js"></script>
+</body>
+</html>
