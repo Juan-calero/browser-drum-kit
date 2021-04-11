@@ -1,18 +1,18 @@
-function playSound(e){
-    const play_audio = document.querySelector(`audio[key-data="${e.code}"]`)
+function playAudio(e){
+    const audio = document.querySelector(`audio[key-data="${e.code}"]`);
     const key = document.querySelector(`.drum__key[key-data="${e.code}"]`);
-    key.classList.add("playing")
-    play_audio.currentTime = 0;
-    play_audio.play();
-    if(!play_audio) return;
-    }
-function stopAnimation(key){
+    key.classList.add("playing");
+    if(!audio) return;
+    audio.currentTime = 0;
+    audio.play();
+}
+function animateKey(key){ 
     this.classList.remove("playing");
 }
-
-var keys = document.querySelectorAll('.drum__key');
+const keys = document.querySelectorAll(".drum__key");
 keys.forEach(key => {
-    key.addEventListener('transitionend', stopAnimation);
-});
+    key.addEventListener('transitionend', animateKey)});
 
-window.addEventListener('keydown', playSound);
+
+window.addEventListener('keydown', playAudio);
+
